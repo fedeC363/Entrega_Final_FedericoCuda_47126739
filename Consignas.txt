@@ -9,8 +9,8 @@ entrega por github
 * 3 modelos mínimo⛔
 * tener todos los chiches⛔
 * sitio para dejar reseñas⛔
-* app de registro⛔
-*app de login⛔
+* app de registro✅
+*app de login✅
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Entrega final - Playground Final project

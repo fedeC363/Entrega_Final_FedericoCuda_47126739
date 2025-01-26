@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Ak_Clientes',
     'Ak_Usuarios',
+    'Ak_LogIn',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = '/login/' # Redirigir al login si un usuario no está autenticado
+LOGIN_REDIRECT_URL = 'menu/'  # Dónde se redirige tras el login
+LOGOUT_REDIRECT_URL = 'login/'  # Dónde se redirige tras el logout
