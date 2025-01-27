@@ -4,11 +4,11 @@ entrega por github
 
 *1 ruta a about me✅
 * no tiene que haber un boton que lleve a un error✅
-* CRUD⛔
-* cada modelo debe tener 4/5 campos⛔
-* 3 modelos mínimo⛔
-* tener todos los chiches⛔
-* sitio para dejar reseñas⛔
+* CRUD✅
+* cada modelo debe tener 4/5 campos✅
+* 3 modelos mínimo✅
+* tener todos los chiches✅
+* sitio para dejar reseñas✅
 * app de registro✅
 *app de login✅
 
@@ -48,7 +48,7 @@ Te recomendamos incluir:
 
 *Messages⛔
 
-*Profile⛔
+*Profile✅
 
 *Logout✅
 
@@ -56,17 +56,17 @@ Te recomendamos incluir:
 
 *Get page⛔
 
-*Create page⛔
+*Create page✅
 
-*Update Page⛔
+*Update Page✅
 
-*Delete page⛔
+*Delete page✅
 
-*Get profile⛔
+*Get profile✅
 
-*Update profile⛔
+*Update profile✅
 
-*Requisitos base⛔
+*Requisitos base✅
 
 Los requisitos base serán parte de los criterios de evaluación para aprobar el proyecto.
 ========================================================================================
@@ -106,49 +106,49 @@ Estos últimos son por el hecho de no compartir la info de tu bd y, aparte, las 
 
 *Uso de mínimo un mixin en una CBV y un decorador en una view común.
 
-*Una vista de inicio/home.
+*Una vista de inicio/home.✅
 
-*Acceso a una vista "Acerca de mí"/"About"
+*Acceso a una vista "Acerca de mí"/"About"✅
 
-*Crear un modelo principal (Blog/Post/Auto/Vendedor/Docente/etc) que contenga los siguiente campos como mínimo: 2 Charfield, 1 de texto enriquecido (usando ckeditor), 1 campo de imagen, 1 de fecha
+*Crear un modelo principal (Blog/Post/Auto/Vendedor/Docente/etc) que contenga los siguiente campos como mínimo: 2 Charfield, 1 de texto enriquecido (usando ckeditor), 1 campo de imagen, 1 de fecha✅
 
-*Vista de listado de los objetos del modelo principal (modelo a elección). En la cual cada objeto mostrará solo algunos de sus datos.
+*Vista de listado de los objetos del modelo principal (modelo a elección). En la cual cada objeto mostrará solo algunos de sus datos.✅
 
-*Mensaje que da aviso en caso de no haber ningún objeto creado o al utilizar el buscador no encontrar tampoco algún objeto.
+*Mensaje que da aviso en caso de no haber ningún objeto creado o al utilizar el buscador no encontrar tampoco algún objeto.✅
 
 Desde el listado:
 =================
-*poder acceder a una vista que muestre el detalle de el objeto seleccionado⛔
+*poder acceder a una vista que muestre el detalle de el objeto seleccionado✅
 
-*poder acceder a una vista de creación, una de edición y una de borrado de objetos.⛔
+*poder acceder a una vista de creación, una de edición y una de borrado de objetos.✅
 
 *Registrar en el apartado de admin todos los modelos creados.⛔
 
-*Tener una app (accounts/cuentas/etc) para el manejo de todas las vistas relacionadas al usuario/autenticación.⛔
+*Tener una app (accounts/cuentas/etc) para el manejo de todas las vistas relacionadas al usuario/autenticación.✅
 
-*Desarrollar las vistas para un login, un logout y un registro para usuarios. En este último se debe solicitar: username, email, password.⛔
+*Desarrollar las vistas para un login, un logout y un registro para usuarios. En este último se debe solicitar: username, email, password.✅
 
 Crear una vista de perfil donde se muestran los datos del usuario:
 ==================================================================
 
-*nombre⛔
+*nombre✅
 
 
-*apellido⛔
+*apellido✅
 
 
-*email⛔
+*email✅
 
 
-*avatar⛔
+*avatar✅
 
 
-*biografia/link/fecha de cumpleanios/etc.⛔
+*biografia/link/fecha de cumpleanios/etc.✅
 
 
-*Desde el perfil, crear un acceso a una vista de edición de estos datos. Agregar el cambio de password.⛔
+*Desde el perfil, crear un acceso a una vista de edición de estos datos. Agregar el cambio de password.✅
 
-*Crear una app de mensajería con todo lo necesario para que los usuarios puedan comunicarse entre sí por mensajes. Todo en esta app queda a criterio del alumno/a siempre y cuando funcione correctamente.⛔
+*Crear una app de mensajería con todo lo necesario para que los usuarios puedan comunicarse entre sí por mensajes. Todo en esta app queda a criterio del alumno/a siempre y cuando funcione correctamente.✅
 
 PUNTAZO A TENER EN CUENTA! PROBAR, PROBAR Y PROBAR ANTES DE
 SUBIR EL CÓDIGO A GITHUB... ( no apurarse a hacer el commit y subir los

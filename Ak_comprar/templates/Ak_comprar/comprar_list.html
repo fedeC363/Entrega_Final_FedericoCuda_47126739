@@ -1,0 +1,27 @@
+{% extends "Ak_Clientes/index.html" %}
+{% load static %}
+
+{% block titulo %}Lista Articulos Comprados{% endblock titulo %}
+{% block carrusel %}{% endblock carrusel %}
+
+{% block cuerpo %}
+<!--
+    ya se ve lindo    
+-->
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="h3">Lista de Compras</h1>
+            <a href="{% url 'comprar_create' %}" class="btn btn-primary">Hacer una compra</a>
+        </div>
+        
+        <ul class="list-group">
+            {% for post in comprar %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>{{ post.modelo }}</span>
+                    <a href="{% url 'comprar_detail' post.pk %}" class="btn btn-link">Ver detalles</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    </body>
+{% endblock cuerpo %}

@@ -22,4 +22,7 @@ urlpatterns = [
     path('', include('Ak_Clientes.urls')),
     path('', include('Ak_Usuarios.urls')),
     path('', include('Ak_LogIn.urls')),
+    path('', include('Ak_comprar.urls')),
+    path('', include('Ak_Comentarios.urls')),
+    path('', include('Ak_Reservar.urls')),
 ]

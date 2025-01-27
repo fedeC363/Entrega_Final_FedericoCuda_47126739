@@ -1,0 +1,23 @@
+{% extends "Ak_Clientes/index.html" %}
+{% load static %}
+
+{% block titulo %}Actualice su comentario{% endblock titulo %}
+{% block carrusel %}{% endblock carrusel %}
+
+{% block cuerpo %}
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h1 class="card-title text-center">Actualizar Comentario</h1>
+                <form method="post" class="mt-4">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div class="d-flex justify-content-center mt-4">
+                        <button type="submit" class="btn btn-success me-3">Actualizar</button>
+                        <a href="{% url 'comentar_list' %}" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock cuerpo %}

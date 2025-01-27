@@ -35,6 +35,7 @@
       {% endif %}
       
       <a class="nav-link" href="{% url 'about' %}">Acerca de mi</a>
+      
     </div>
     
   </div>
@@ -42,36 +43,47 @@
 </nav>
 <body>
   {% block carrusel %}
-    <!---!>Carrusel comienzo<-->
-    <div id="carouselExampleIndicators" class="carousel slide">
+  <!-- Carrusel comienzo -->
+  <div id="carouselExampleIndicators" class="carousel slide mt-4">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/media/imagenes_carrusel/bulbasur.jpg" class="d-block w-100" style="height: 400px; object-fit: contain;" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/media/imagenes_carrusel/squirtle.jpg" class="d-block w-100" style="height: 400px; object-fit: contain;" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="/media/imagenes_carrusel/charmander.jpg" class="d-block w-100" style="height: 400px; object-fit: contain;" alt="...">
-        </div>
+          <div class="carousel-item active">
+              <img src="/media/imagenes_carrusel/bulbasur.jpg" class="d-block w-100" style="height: 400px; object-fit: contain;" alt="Bulbasaur">
+          </div>
+          <div class="carousel-item">
+              <img src="/media/imagenes_carrusel/squirtle.jpg" class="d-block w-100" style="height: 400px; object-fit: contain;" alt="Squirtle">
+          </div>
+          <div class="carousel-item">
+              <img src="/media/imagenes_carrusel/charmander.jpg" class="d-block w-100" style="height: 400px; object-fit: contain;" alt="Charmander">
+          </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
       </button>
-    </div>
-    <!---!>Carrusel Fin<-->
-  {% endblock carrusel %}
-  {% block cuerpo %}{% endblock cuerpo %}
+  </div>
+  <!-- Carrusel Fin -->
+{% endblock carrusel %}
+
+{% block cuerpo %}
+  <div class="text-center mt-5">
+      <a href="{% url 'comprar_list' %}" class="btn btn-primary">Comprar</a>
+  </div>
+  <div class="text-center mt-5">
+    <a href="{% url 'comentar_list' %}" class="btn btn-primary">Comentar</a>
+  </div>
+  <div class="text-center mt-5">
+    <a href="{% url 'reservar_list' %}" class="btn btn-primary">Reservar</a>
+  </div>
+{% endblock cuerpo %}
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

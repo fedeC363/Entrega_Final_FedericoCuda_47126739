@@ -1,0 +1,22 @@
+{% extends "Ak_Clientes/index.html" %}
+{% load static %}
+
+{% block titulo %}tienda{% endblock titulo %}
+{% block carrusel %}{% endblock carrusel %}
+
+{% block cuerpo %}
+<!--
+    ya se ve lindo    
+-->
+    <div class="container mt-5">
+        <h1 class="mb-3">{{ view.object|default:"Por favor, escriba su comentario de forma formal" }}</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <a href="{% url 'comentar_list' %}" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+{% endblock cuerpo %}

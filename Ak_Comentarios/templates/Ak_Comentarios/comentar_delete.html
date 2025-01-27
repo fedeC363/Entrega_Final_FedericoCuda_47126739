@@ -1,0 +1,26 @@
+{% extends "Ak_Clientes/index.html" %}
+{% load static %}
+
+{% block titulo %}Borrar Comentario{% endblock titulo %}
+{% block carrusel %}{% endblock carrusel %}
+
+{% block cuerpo %}
+<!--
+    ya se ve lindo    
+-->
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h1 class="card-title text-danger text-center">Eliminar {{ object.Modelo }}</h1>
+                <p class="text-center">¿Estás seguro de que deseas borrar tu comentario?</p>
+                <div class="d-flex justify-content-center mt-4">
+                    <form method="post" class="me-3">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </form>
+                    <a href="{% url 'comprar_list' %}" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock cuerpo %}

@@ -1,0 +1,27 @@
+{% extends "Ak_Clientes/index.html" %}
+{% load static %}
+
+{% block titulo %}Lista de Comentarios{% endblock titulo %}
+{% block carrusel %}{% endblock carrusel %}
+
+{% block cuerpo %}
+<!--
+    ya se ve lindo    
+-->
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="h3">Lista de Comentarios</h1>
+            <a href="{% url 'comentar_create' %}" class="btn btn-primary">Hacer un comentario</a>
+        </div>
+        
+        <ul class="list-group">
+            {% for post in comentarios %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>{{ post.asunto }}</span>
+                    <a href="{% url 'comentar_detail' post.pk %}" class="btn btn-link">Ver detalles</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    </body>
+{% endblock cuerpo %}

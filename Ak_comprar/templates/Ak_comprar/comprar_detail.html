@@ -1,0 +1,25 @@
+{% extends "Ak_Clientes/index.html" %}
+{% load static %}
+
+{% block titulo %}Detalle{% endblock titulo %}
+{% block carrusel %}{% endblock carrusel %}
+
+{% block cuerpo %}
+<!--
+    ya se ve lindo    
+-->
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h1 class="card-title">{{ object.modelo }}</h1>
+                <p class="card-text"><strong>Talle:</strong> {{ object.talle }}</p>
+                <p class="card-text"><strong>Autor:</strong> {{ object.mail }}</p>
+                <div class="d-flex justify-content-between mt-4">
+                    <a href="{% url 'comprar_update' object.pk %}" class="btn btn-primary">Editar</a>
+                    <a href="{% url 'comprar_delete' object.pk %}" class="btn btn-danger">Eliminar</a>
+                    <a href="{% url 'comprar_list' %}" class="btn btn-secondary">Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock cuerpo %}

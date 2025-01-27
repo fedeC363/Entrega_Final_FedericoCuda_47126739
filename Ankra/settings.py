@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'Ak_Clientes',
     'Ak_Usuarios',
     'Ak_LogIn',
+    'Ak_comprar',
+    'Ak_Comentarios',
+    'Ak_Reservar',
 ]
 
 MIDDLEWARE = [
