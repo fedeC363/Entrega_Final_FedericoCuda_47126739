@@ -7,5 +7,5 @@ class Comentario(models.Model):
     nombre_asistente = models.CharField(max_length=80)
     
     def __str__(self):
-        return f'{self.asunto}'    
+        return f'{self.asunto} - {self.autor} - {self.nombre_asistente}'    
 

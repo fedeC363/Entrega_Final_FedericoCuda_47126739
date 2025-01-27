@@ -46,7 +46,7 @@ Te recomendamos incluir:
 
 *Signup✅
 
-*Messages⛔
+*Messages✅
 
 *Profile✅
 
@@ -122,7 +122,7 @@ Desde el listado:
 
 *poder acceder a una vista de creación, una de edición y una de borrado de objetos.✅
 
-*Registrar en el apartado de admin todos los modelos creados.⛔
+*Registrar en el apartado de admin todos los modelos creados.✅
 
 *Tener una app (accounts/cuentas/etc) para el manejo de todas las vistas relacionadas al usuario/autenticación.✅
 
