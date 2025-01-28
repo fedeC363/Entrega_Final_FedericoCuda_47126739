@@ -1,9 +1,7 @@
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from .models import Comentario
-from .forms import ComentarioForms
-###########################################################
-#Para Comentar
+
 class ComentarioListView(ListView):
     model = Comentario
     template_name = 'Ak_Comentarios/comentar_list.html'

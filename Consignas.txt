@@ -27,7 +27,7 @@ User story/brief:
 
 *Si no existe ninguna página mostrar un "No hay páginas aún".✅
 
-*Para editar o borrar pages debes estar logueado.⛔
+*Para editar o borrar pages debes estar logueado.✅
 
 *Piezas sugeridas⛔
 
@@ -98,7 +98,7 @@ Exista gitignore con:
 
 Estos últimos son por el hecho de no compartir la info de tu bd y, aparte, las imágenes son archivos muy pesados que no es recomendable tenerlos en el repo. En cambio, las imágenes que sean parte del código del proyecto deberían guardarse en la carpeta static.
 
-*Existencia del archivo requirements.txt actualizado.
+*Existencia del archivo requirements.txt actualizado.✅
 
 *Tener en cuenta al manejar forms con imágenes hay que adaptar el template, y la vista...no solo el modelo y el formulario.
 
