@@ -14,4 +14,4 @@ Los modelos se encuentran como botones en la parte inferior de la pagina (esto e
 
 Link del drive donde se encuentra el video explicativo: https://drive.google.com/drive/folders/1aWDfG1msdqutac9oV6O9t4B6Vx9tUivx?usp=drive_link
 
-Link de PythonAnywhere: 
+Link de PythonAnywhere: https://fedecuda.pythonanywhere.com
